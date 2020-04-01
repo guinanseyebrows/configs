@@ -1,0 +1,40 @@
+enable_audio_bell       no
+window_padding_width	8.0	
+font_family 		    Hack Italic
+font_size		        10.0
+remember_window_size    no
+initial_window_width    720
+initial_window_height   480
+
+foreground 		        #e1e1e1
+background		        #222222
+cursor			        #e1e1e1
+cursor_text_color	    #222222
+selection_foreground	#222222
+selection_background	#e1e1e1
+background_opacity	    .86
+
+# black
+color0			        #212121
+color8			        #212121
+# red
+color1      			#4a708b
+color9		        	#4a708b
+# green
+color2		        	#5f9ea0
+color10		        	#5f9ea0
+# yellow
+color3  			    #6ca6cd
+color11 			    #6ca6cd
+# blue
+color4	    	    	#fafaaa
+color12		        	#ffffaa
+# magenta
+color5	        		#cd9b9b
+color13 		    	#cd9b9b
+# cyan
+color6	    	    	#9fb6cd
+color14		        	#9fb6cd
+ white
+color7		        	#d8bfd8
+color15		        	#d8bfd8
