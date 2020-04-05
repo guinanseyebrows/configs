@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-center '/home/seth/media/pictures/wallpapers/rooftop-full.png' 
+feh --no-fehbg --bg-fill '/home/seth/media/pictures/wallpapers/bldg2.png' 
