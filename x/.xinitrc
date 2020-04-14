@@ -5,7 +5,6 @@
 sxhkd &
 
 # compositor
-#picom --no-fading-openclose &
 picom &
 
 # background
@@ -18,5 +17,7 @@ setxkbmap -option ctrl:nocaps &
 
 xss-lock -- slock &
 
+# ow my eyes
+redshift &
 
 exec cwm

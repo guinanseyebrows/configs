@@ -1,394 +1,3 @@
-ls -la
-mv .fehbg feh/
-mkdir bash
-mv .bashrc 
-mv .bashrc bash/
-ls
-mkdir kitty
-mkdir picom
-mkdir sxhkd
-mkdir kitty/.config
-mkdir picom/.config
-mkdir kitty/.config/kitty
-mkdir bar
-mkdir bar/.conf
-mkdir bar/.config
-mkdir gtk/.config/
-ls
-mkdir sxhkd/.config
-irssi 
-vi .config/bar.sh 
-cd dev/
-ls
-vi sp-nowplaying.py 
-vi ~/.config/bar.sh 
-vi
-ls
-chmod +x spotctl.py 
-./spotctl.py pause
-./spotctl.py next
-./spotctl.py prev
-./spotctl.py previous
-./spotctl.py playpause
-vi spotctl.py 
-./spotctl.py pause
-./spotctl.py playpause
-./spotctl.py play
-./spotctl.py pause
-vi spotctl.py 
-awssh devops
-vi spotctl.py 
-python
-vi ~/.config/bar.sh 
-killall bar.sh
-cd
-.config/bar.sh 
-vi ~/.config/bar.sh 
-.config/bar.sh 
-vi ~/.config/bar.sh 
-killall bar.sh
-ls .local/bin/
-killall bar.sh
-.config/bar.sh 
-ls .local/bin/
-pyspctl
-food.sh 
-ls -l .local/bin/
-rm .local/bin/pyspctl 
-.config/bar.sh 
-cd .dots/
-ls
-ls ba
-ls bar
-cd bar/
-mkdir .conf
-mkdir -p .local/bin
-mv bar.sh .local/bin/
-cd ..
-vi x/.xinitrc 
-stow x
-stow bar
-cd .dots/
-echo "# configs" >> README.md
-git init
-git add README.md 
-git add *
-git commit -m "first commit"
-ls
-mv irssi/.irssi/ ~/
-ls ~/.irssi
-rm -rf irssi/
-ls -l ~
-ls -la ~
-rm ~/.irssi 
-git add *
-git commit -m "first commit"
-git rm irssi 
-git rm -r irssi 
-git commit -m "first commit"
-git remote add origin https://github.com/guinanseyebrows/configs.git
-git push -u origin master
-git push -u origin master
-git push -u origin master
-vi README.md 
-git add README.md 
-git commit -a "update readme"
-git commit -m "update readme"
-git push
-vi x/.xinitrc 
-mkdir system76-power-scripts
-mkdir -p system76-power-scripts/usr/local/bin
-sudo mv /usr/bin/system76-power-* system76-power-scripts/usr/local/bin/
-sudo chown seth system76-power-scripts/usr/local/bin/system76-power-*
-stow system76-power-scripts/
-system76-power-battery
-echo $PATH
-sudo system76-power-battery
-ls /usr/local/bin
-ls system76-power-scripts/
-stow system76-power-scripts
-ls system76-power-scripts/
-ls /usr/local/bin
-sudo stow system76-power-scripts
-ls /usr/local/bin
-mv system76-power-scripts/usr/local/bin/system76-power-* /usr/local/bin/
-sudo mv system76-power-scripts/usr/local/bin/system76-power-* /usr/local/bin/
-system76-power-battery 
-sudo system76-power-battery 
-sudo system76-power-performance 
-sudo system76-power-battery 
-exit
-exit
-exi
-exit
-ls
-ls -la
-ls .local/bin/
-rm bar.sh 
-cd .dots/ba
-cd .dots/bar/
-ls
-ls -la
-rm .conf
-rmdir .conf
-ls
-rmdir .config/
-ls
-cd ..
-ls
-ls -la
-cd ..
-ls
-ls -la
-ls
-mkdir .dots/vim
-mv .vim* .dots/vim/
-cd .dots/
-stow vim/
-cd ..
-ls -la
-mv .bash_history .bash_logout .bash_profile .dots/bash/
-stow .dots/bash/
-cd .dots/
-stow bash
-cd ..
-vi .config/kitty/kitty.conf
-exit
-vi .config/kitty/kitty.conf
-exit
-exit
-vi .cwmrc 
-neofetch 
-vi .local/bin/bar.sh 
-sudo pacman -R vulkan-icd-loader 
-dav1d 
-sudo pacman -R dav1d 
-sudo pacman -R adobe-source-code-pro-fonts arc-solid-gtk-theme 
-sudo pacman -R arc-solid-gtk-theme 
-sudo pacman -R dhclient
-sudo pacman -R dhcpcd 
-sudo pacman -R hdparm 
-sudo pacman -R tlp
-systemctl disable tlp
-systemctl stop tlp
-sudo pacman -R hdparm 
-sudo pacman -R linux-headers 
-sudo pacman -S linux-headers 
-pacman -R siji-git 
-sudo pacman -R siji-git 
-vim .gitconfig 
-pacman -Q
-pacman -Qi
-pacman -Q
-pacman -Rns $(pacman -Qtdq)
-sudo pacman -Rns $(pacman -Qtdq)
-sudo reboot
-sudo journalctl -f
-sudo vi /etc/udev/rules.d/80-local.rules 
-sudo journalctl -f
-nmtui
-exit
-whois
-sudo pacman -S whois
-whois friswold.com
-sudo pacman -Sy
-sudo pacman -Sy
-sudo pacman -S
-sudo pacman Sy
-sudo pacman -Sy
-ping 9.9.9.9
-ping google.com
-ping google.com
-ping google.com
-sudo reboot
-sudo /usr/bin/system76-power-performance
-ping google.com
-nmtui
-irssi 
-sudo pacman -S weechat
-sudo pacman -Syu
-sudo pacman -S weechat
-weechat
-cd .weechat/
-cp weechat.conf weechat.conf.def
-cat > weechat.conf
-weechat
-weechat
-vi .weechat/weechat.conf
-exit
-ping google.com
-sudo vi /etc/resolv.conf
-ping google.com
-sudo pacman -Syu
-pacman -Ss exfat
-dmesg
-sudo mount /dev/sda1  /mnt/
-cd /mnt/
-ls
-cd movies/
-ls
-cp Hackers.mkv ~/media/
-c d..
-cd ..
-mkdir tv
-sudo mkdir tv
-ls
-mv Angel/ Battlestar_Galactica/ Bob\ Ross\ -\ The\ Joy\ of\ Painting/ Breaking\ Bad/ Buffy/ Deadwood/ Desperate\ Housewives/ Firefly/ FlightOfTheConchords/ Fresh\ Prince/ Game_Of_Thrones/ Garth\ Marenghi\'s\ Dark\ Place/ Ghostwriter/ king\ of\ the\ hill/ Kroll\ Show/ Look\ Around\ You/ Mad\ Men/ Oz/ Seinfeld/ Star\ Trek/ The\ IT\ Crowd/ The\ Mighty\ Boosh/ The\ Wire/ TrailerParkBoys/ X-Files/ tv/
-sudo mv Angel/ Battlestar_Galactica/ Bob\ Ross\ -\ The\ Joy\ of\ Painting/ Breaking\ Bad/ Buffy/ Deadwood/ Desperate\ Housewives/ Firefly/ FlightOfTheConchords/ Fresh\ Prince/ Game_Of_Thrones/ Garth\ Marenghi\'s\ Dark\ Place/ Ghostwriter/ king\ of\ the\ hill/ Kroll\ Show/ Look\ Around\ You/ Mad\ Men/ Oz/ Seinfeld/ Star\ Trek/ The\ IT\ Crowd/ The\ Mighty\ Boosh/ The\ Wire/ TrailerParkBoys/ X-Files/ tv/
-ls
-mv x1c7-stock-2019-12-04-22-img/ backups/
-ls
-sudo mv x1c7-stock-2019-12-04-22-img/ backups/
-ls
-cd
-sudo umount 
-sudo umount /mnt 
-ffmpeg -i media/Hackers.mkv media/hackers.mp3
-sudo pacman -S audacity
-ls
-sudo pacman -S mplayer 
-mplayer media/Hackers.mkv 
-ls -la
-exit
-ls -la
-exit
-cd .dots/
-ls
-vi bash/.bashrc 
-stow bash
-exit
-groupadd nogroup
-sudo cat /etc/group
-cd .dots/
-sl
-cd kitty/.config/kitty/
-ls
-vi kitty.conf
-git clone https://git.suckless.org/slock
-cd slock/
-ls
-git apply ~/downloads/slock-xresources-20191126-53e56c7.diff
-ls
-cp config.def.h config.h
-git apply ~/downloads/slock-xresources-20191126-53e56c7.diff
-git am ~/downloads/slock-xresources-20191126-53e56c7.diff
-ls
-patch -p1 < ~/downloads/slock-xresources-20191126-53e56c7.diff 
-ls
-make
-cd ..
-rm -rf 
-ls
-rm -rf slock/
-ls
-rm *.wav
-ls
-ls usr
-ls usr/local/bin/
-ls usr/local/
-ls usr/
-rm -rf usr
-ls
-ls Desktop/
-cd downloads/
-ls
-feh 1500x500.jpg 
-rm 1500x500.jpg 
-feh  IoIZykK1_400x400.jpg 
-rm IoIZykK1_400x400.jpg 
-feh pinkjapan.jpg 
-rm pinkjapan.jpg 
-ls
-mv Win10_1909_English_x64.iso ~/vm/
-ls
-tar xf slock-1.4.tar.gz 
-ls
-cd slock-1.4/
-ls
-patch -p1 < ../slock-xresources-20191126-53e56c7.diff 
-cd ..
-rm -rf slock-1.4
-tar xf slock-1.4.tar.gz 
-cd slock-1.4/
-ls
-vi config.def.h 
-make
-sudo pacman -R slock 
-sudo make install
-slock
-vi config.def.h 
-make
-sudo make install
-slock
-vi config.def.h 
-make clean
-make
-make install
-sudo make install
-slock
-cp config.def.h config.h
-make clean
-make
-sudo make install
-vi config.h 
-make clean
-make
-sudo make install
-vi config.h 
-make clean
-make
-sudo make install
-vi config.h 
-vi config.h 
-make clean
-make
-sudo make install
-cd 
-ls
-cd downloads/
-ls
-rm -rf slock-*
-weechat
-sudo pacman -S slim
-systemctl enable slim
-cd dev/
-ls
-git clone https://github.com/naglis/slim-minimal.git
-ls
-cd slim-minimal/
-ls
-vi slim.theme 
-ls
-cd ..
-cp slim-minimal/ /usr/share/slim/themes/
-sudo cp -r slim-minimal/ /usr/share/slim/themes/
-sudo vi /etc/slim.conf 
-vi .config/kitty/kitty.conf
-vi /usr/share/slim/themes/slim-minimal/slim.theme 
-sudo vi /usr/share/slim/themes/slim-minimal/slim.theme 
-exit
-sudo vi /usr/share/slim/themes/slim-minimal/slim.theme 
-sudo su
-ls
-sudo vi /etc/slim.conf 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-cat .config/kitty/kitty.conf
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-cat .local/bin/bar.sh 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
 sudo vi /usr/share/slim/themes/fog/slim.theme 
 sudo vi /usr/share/slim/themes/fog/slim.theme 
 sudo vi /usr/share/slim/themes/fog/slim.theme 
@@ -498,3 +107,394 @@ sudo vi /usr/share/slim/themes/dark/slim.theme
 vi .dots/bar/.local/bin/bar.sh 
 cd .dots/
 stow bar
+ping seth.nvsbl.org
+sudo apt search certbot
+ls .weechat/
+tar cvjf weechat.gz .weechat/
+ls
+scp -i ~/.ssh/nvsbl.pem weechat.gz seth@aws.nvsbl.org:~/
+exit
+ssh -i ~/.ssh/nvsbl.pem seth@aws.nvsbl.org
+exit
+cd media/pictures/wallpapers/
+ls
+feh dawn.png 
+feh angle1.jpg 
+feh alley2/
+feh alley2.jpg 
+feh bldg
+feh bldg.jpg 
+feh bldg2.png 
+feh bldg2.jpg
+feh city11.jpg 
+feh futurecity1.jpg 
+feh rooftop
+feh pastelcity1.png 
+cd 
+cd downloads/
+ls
+unzstd  black_twill.zip 
+sudo pacman -S unzip
+sudo pacman -Syu
+ls
+unzip black_twill.zip 
+unzip darkness.zip 
+ls
+for i in $(ls ./*.zip) ; do unzip $i ; done
+ls
+rm *.zip
+ls
+rm -rf glider.svg index.html nickel.png style.css __MACOSX/
+ls
+ls *
+mkdir tils
+mv ./*/.png tils/
+ls
+ls *
+mv */.png tils/
+ls tils/
+ls
+for i in $(ls *.png) ; do mv $i tils/ ; done
+for i in $(ls -d *.png) ; do mv $i tils/ ; done
+man ls
+for i in $(ls -d ) ; do mv $i/*png tils/ ; done
+for i in $(ls -d $(pwd)) ; do mv $i/*png tils/ ; done
+for i in $(ls -d $(pwd)/*) ; do mv $i/*png tils/ ; done
+ls tils/
+mv tils/ tiles
+mv tiles/ ~/media/pictures/wallpapers/
+cd 
+cd media/pictures/wallpapers/tiles/
+ls
+feh --bg-tile black_twill.png 
+feh --bg-tile darkness.png 
+feh --bg-tile dirty_old_shirt
+feh --bg-tile dirty_old_shirt.png 
+feh --bg-tile dirty_old_shirt_@2X.png 
+feh --bg-tile ep_naturalblack.png 
+feh --bg-tile hexabump.png 
+feh --bg-tile oriental-tiles.png 
+feh --bg-tile tex2res4.png 
+feh --bg-tile tweed.png 
+feh --bg-tile dirty_old_shirt.png 
+feh --bg-tile dirty_old_shirt_@2X.png 
+exit
+exit
+eixt
+exit
+man cwm
+man cwmrc
+man cwmrc
+vi .cwmrc 
+vi .cwmrc 
+vi .ssh/known_hosts 
+ssh aws.nvsbl.org 
+whoami
+ping google.com
+cd .dots/
+git add ./*
+git commit -m "updates
+"
+git commit -m "updates"
+git push
+git push
+git push
+git push
+ls
+cd 
+ls
+cd dev/
+ls
+git clone https://github.com/guinanseyebrows/slim-themes.git
+ls
+rm slim-minimal/
+rm -rf slim-themes/
+sudo cp /usr/share/slim/themes/{fog,dark} slim-minimal/
+sudo cp /usr/share/slim/themes/{fog,dark} ./
+sudo cp -r /usr/share/slim/themes/{fog,dark} ./
+ls
+rm -rf slim-minimal/
+git clone https://github.com/guinanseyebrows/slim-themes.git
+ls
+mv dark/ fog/ slim-themes/
+sudo mv dark/ fog/ slim-themes/
+sudo chown seth slim-themes/dark/
+sudo chown seth slim-themes/fog
+sudo chown -R seth slim-themes/
+cd slim-themes/
+git add ./*
+ls
+ls dark/
+ls -la dark/
+rm -rf  dark/.git/
+rm -rf  fog/.git/
+git add ./*
+git commit "adding 2 new themes"
+git commit -m "adding 2 new themes"
+git push
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+cd
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+scp -i ~/.ssh/nvsbl.pem downloads/nickel.png seth@aws.nvsbl.org:~/seth/img/
+scp -i ~/.ssh/nvsbl.pem downloads/nickel.png seth@aws.nvsbl.org:~/seth/img/
+scp -i ~/.ssh/nvsbl.pem downloads/nickel.png seth@aws.nvsbl.org:~/seth/img/
+scp -i ~/.ssh/nvsbl.pem downloads/nickel.png seth@aws.nvsbl.org:~/seth/img/
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+sudo pacman -Sy
+sudo pacman -Syu
+sudo pacman -Syyu
+ping ebay
+ping ebay.com
+nmtui
+ping ebay.com
+ping ebay.com
+ping ebay.com
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+sudo pacman -Syu
+sudo pacman -S mupdf-gl
+mupdf docs/Books/Eloquent_JavaScript.pdf 
+sudo vi /etc/X11/xorg.conf.d/30-touchpad.conf
+libinput list-devices
+libinput list-devices | pad
+libinput list-devices | grep pad
+libinput list
+libinput --help
+xinput list
+grep -e "Using input driver 'libinput'" /var/log/Xorg.0.log
+exit
+man mupdf 
+mupdf docs/Books/Eloquent_JavaScript.pdf 
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+exit
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+exit
+systemctl start slim.service 
+sudo cp /etc/default/grub /root/grub-default
+sudo vi /etc/default/grub 
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+sudo reboot
+sudo vi /etc/default/grub 
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+sudo reboot
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+neofetch 
+exit
+mosh 
+mosh seth@aws.nvsbl.org --ssh="-i ~/.ssh/nvsbl.pem"
+mosh seth@aws.nvsbl.org --ssh="ssh -i ~/.ssh/nvsbl.pem"
+mosh seth@aws.nvsbl.org --ssh="ssh -i ~/.ssh/nvsbl.pem"
+sudo pacman -Ss mosh
+sudo pacman -S mosh
+mosh --ssh"ssh -i ~/.ssh/nvsbl.pem" aws.nvsbl.org
+mosh --ssh="ssh -i ~/.ssh/nvsbl.pem" aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+clear
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+neofetch
+vi .config/kitty/kitty.conf
+ls
+vi .local/bin/nvsbl
+chmod +x .local/bin/nvsbl 
+nvsbl 
+exit
+cd media/pictures/wallpapers/tiles/
+cd ..
+feh --bg-center road.jpg 
+feh --bg-center pagoda.jpg 
+feh --bg-center mountains.jpg 
+feh --bg-fill mountains.jpg 
+feh --bg-fill woods.png 
+feh --bg-fill spaceship.jpg 
+feh --bg-fill woods.png 
+cd
+vi .local/bin/bar.sh 
+vi .local/bin/launch 
+exit
+nvsbl 
+exit
+cd docs/prof/
+ls
+cat > Seth-Hover-Cover-Letter-Canonical.txt 
+exit
+echo $cur
+echo $cword 
+echo $GROUPS 
+exit
+vi docs/Seth-Hover-Cover-Letter-Canonical.txt 
+sudo pacman -S xclip
+xclip docs/Seth-Hover-Cover-Letter-Canonical.txt 
+s
+sudo vi /etc/default/grub 
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+cd docs/
+ls
+dmesg
+sudo mount /dev/sda1 /mnt/
+cd /mnt/
+ls
+cd seth/
+ls
+cd Documents/
+ls
+cp Seth-Hover-Cover-Letter-* seth-hover-resume* Tainter_Joseph_The_Collapse_of_Complex_Societies.pdf ~/docs/
+cd ..
+ls
+cd Vi
+ls Music/
+ls VirtualBox\ VMs/
+cp -r VirtualBox\ VMs/macOS/ ~/vm/
+ls
+ls Desktop/
+ls Pictures/
+mv Pictures/* ~/media/pictures/
+cp -r Pictures/* ~/media/pictures/
+ls
+ls Vi
+ls Videos/
+ls Work/
+cd
+sync
+sudo sync
+sudo umount /mnt 
+vi .cwmrc 
+ls
+cd docs/
+ls
+less Seth-Hover-Cover-Letter-Canonical.txt 
+cat > Seth-Hover-Cover-Letter-Canonical.txt 
+cat > Seth-Hover-Cover-Letter-Canonical.txt 
+mv ~/downloads/SethHover-CoverLetter.pdf ./
+mkdir prof
+ls
+mv *Cov* prof/
+ls
+mv *resum* prof/
+ls
+mv Tainter_Joseph_The_Collapse_of_Complex_Societies.pdf Books/
+mv Books/ books
+ls
+nvsbl
+sudo pacman -S google-chrome
+sudo pacman -S googlechrome
+sudo pacman -S chrome
+pacman -Ss chrome
+cd
+ls
+rm weechat.gz 
+ls usr/share/slim/themes/
+ls usr/share/slim/themes/
+rm -rf usr
+ls etc 
+ls etc/
+rm etc 
+ls
+git clone https://aur.archlinux.org/google-chrome.git
+cd google-chrome/
+makepkg -si
+
+rm -rf google-chrome/ Downloads/
+ls
+cd dev/
+ls
+git clone https://github.com/Duncaen/slock.git
+cd sl
+ls
+cd slock/
+ls
+patch -p1 slock-1.2-background-image.patch 
+patch -p1 < slock-1.2-background-image.patch 
+make
+pacman -R slock
+sudo pacman -R slock
+sudo make uninstall 
+sudo make install 
+slock
+slock
+slock
+sudo make clean
+ls
+patch -p1 < slock-1.2-background-image.patch 
+git pull
+exit
+cd wee
+cd .irssi/
+ls
+less config 
+cd ..
+cd .weechat/
+;s
+ls
+grep '/msg' *
+cd ..
+cd .irssi/
+grep '/msg' *
+exit
+neofetch 
+cd media/pictures/
+ls
+scp -i ~/.ssh/nvsbl.pem hhkb.jpg  seth@aws.nvsbl.org:~/seth/img/
+scp -i ~/.ssh/nvsbl.pem hhkb.jpg  seth@aws.nvsbl.org:~/www/img/
+exit
+scp -i ~/.ssh/nvsbl.pem media/pictures/Underconstruction.gif seth@nvsbl.org:~/www/img/
+exit
+vi .local/bin/bar.sh 
+killall bar.sh
+bar.sh 
+bar.sh &
+exit
+ls
+ls
+git clone https://git.suckless.org/slock
+cd slock/
+cp config.def.h config.h
+vi config.h
+make
+sudo make install
+slock
+vi config.h
+ls
+cat /etc/group
+:q
+vi config.h
+sudo make uninstall
+make clean
+sudo make 
+sudo make install 
+vi config.h
+make clean
+sudo make uninstall
+make
+sudo make install
+nmtui
+nmtui
+nmtui
+nmtui
+nmtui
+[B
+nmtui
+nmtui
+nmtui
+nmtui
+nmtui
+nmcli rescan
+nmtui
+vi config.h
+make clean
+sudo make uninstall
+make
+sudo make install
+vi config.h
+exit
+nvsbl 
+ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+exit
