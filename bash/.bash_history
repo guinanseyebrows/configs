@@ -1,41 +1,3 @@
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-sudo vi /usr/share/slim/themes/fog/slim.theme 
-cat /usr/share/terminfo/x/xterm-kitty 
-clear
-ls
-cd downloads/
-ls
-scp -i ~/.ssh/nvsbl.pem glider.svg index.html style.css seth@aws.nvsbl.org:~/
-ls
-scp -i ~/.ssh/nvsbl.pem nickel.png  seth@aws.nvsbl.org:/var/www/seth/
-dig
-ping aws.nvsbl.org
-mv downloads/nvsbl.pem ~/.ssh/
-chmod 600 .ssh/nvsbl.pem 
-ssh -i .ssh/nvsbl.pem ubuntu@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem ubuntu@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem ubuntu@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem ubuntu@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem ubuntu@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
-ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
-ls
-cd media/pictures/
-ls
-cd wallpapers/
-ls
-ls
-feh bldg.jpg 
-feh --bg-fill bldg.jpg 
-feh --bg-center bldg.jpg 
-feh --bg-center bldg2.jpg 
-feh --bg-fill bldg2.jpg 
-feh --bg-fill city11.jpg 
-feh --bg-fill saopaolo.jpg 
-feh --bg-fill city11.jpg 
 feh --bg-fill bldg2.jpg 
 sudo cp -r /usr/share/slim/themes/fog/ /usr/share/slim/themes/dark
 sudo cp bldg2.jpg /usr/share/slim/themes/dark/background.jpg 
@@ -497,4 +459,42 @@ vi config.h
 exit
 nvsbl 
 ssh -i .ssh/nvsbl.pem seth@aws.nvsbl.org
+exit
+sudo pacman -S redshift 
+redshift
+redshift -O 6500
+redshift -O 4200
+redshift -O 5200
+redshift -O 6200
+redshift -O 6500
+redshift 
+man redshift
+redshift -x
+man redshift
+vi .xinitrc 
+ls -l
+ls -la
+cd .dots/
+git commit -a -m 'haven't stored in a while'
+git commit -a -m 'havent stored in a while'
+git push
+git push
+exit
+($(xbacklight)+1)/10
+($(xbacklight)+1) / 10
+2+2
+(2+2)
+echo 2+3
+let 2+3
+expr 3 + 3
+expr ($(xbacklight)+1/10)
+expr ($(xbacklight)+1)/10
+expr (expr $(xbacklight) + 1)/10
+expr $(expr $(xbacklight) + 1)/10
+expr $(xbacklight) / 10
+xbacklight 
+xbl=$(xbacklight)
+echo $xbl 
+(($(xbacklight) + 1)/10))
+(( $(xbacklight) + 1)/10 ))
 exit

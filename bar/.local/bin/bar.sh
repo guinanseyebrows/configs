@@ -14,6 +14,7 @@ clock() {
 	TIME=`date +%l:%M`
 	echo -e "\uf017 $TIME"
 }
+
 title() {
 	WINT=`xtitle`
     case "$WINT" in
@@ -34,6 +35,7 @@ title() {
     #WINICON="\uf1e2"
 	echo -e "$WINICON  %{T1}$WINT%{T1}"
 }
+
 battery() {
 	BATC=`cat /sys/class/power_supply/BAT0/capacity`
 	CHRG=`cat /sys/class/power_supply/BAT0/status`
@@ -60,9 +62,10 @@ battery() {
  
 volume() {
 	VOL=`amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq`
-	if [[ $VOL -ge 65 ]]; then
+    (( VOL = (VOL/10), VOL *= 10 ))
+	if [[ $VOL -ge 60 ]]; then
 		VOLICON="\uf028"
-	elif [[ $VOL -ge 35 && $VOL -lt 65 ]]; then
+	elif [[ $VOL -ge 30 && $VOL -lt 70 ]]; then
 		VOLICON="\uf027"
 	else
 		VOLICON="\uf026"
@@ -92,7 +95,14 @@ spotifystat() {
         echo -e "%{A:pyspctl previous:}%{A2:pyspctl playpause:}%{A3:pyspctl next:}${PAUSE}\uf1bc  $NOWPLAYING%{F${FGCOLOR}}%{A}%{A}%{A}"
     fi
 }
+
+backlightstat() {
+    BACKLIGHT=$(xbacklight) ; BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
+
+    echo -e "\uf0eb  ${BACKLIGHT}%"
+}
+
 while true; do
-        echo "      $(title)  %{r} $(spotifystat)     $(volume)    $(printessid)      $(battery)      $(clock)      "
+        echo "      $(title)  %{r} $(spotifystat)    $(printessid)     $(backlightstat)     $(volume)    $(battery)      $(clock)      "
 	sleep .25
 done | lemonbar -d -g "${BARWIDTH}"x"${BARHEIGHT}" -B "${BGCOLOR}" -F "${FGCOLOR}" -U "${ULCOLOR}" -f "$MAINFONT" -f "$BOLDFONT" -f "FontAwesome:pixelsize=15" | sh > /dev/null 2>&1
