@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/seth/dev/pyspctl'
 let g:netrw_dirhist_2='/home/seth/.config/kitty'
 let g:netrw_dirhist_1='/home/seth/.local/bin'

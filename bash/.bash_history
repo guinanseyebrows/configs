@@ -1,182 +1,3 @@
-feh --bg-fill bldg2.jpg 
-sudo cp -r /usr/share/slim/themes/fog/ /usr/share/slim/themes/dark
-sudo cp bldg2.jpg /usr/share/slim/themes/dark/background.jpg 
-sudo vi /usr/share/slim/themes/dark/slim.theme 
-sudo rm /usr/share/slim/themes/dark/background.png 
-sudo vi /etc/slim.conf 
-feh --bg-center media/pictures/wallpapers/bldg2.jpg 
-feh --bg-fill media/pictures/wallpapers/bldg2.jpg 
-feh --bg-max media/pictures/wallpapers/bldg2.jpg 
-feh --bg-scale media/pictures/wallpapers/bldg2.jpg 
-feh --bg-tile media/pictures/wallpapers/bldg2.jpg 
-feh --bg-fill media/pictures/wallpapers/bldg2.jpg 
-exit
-feh 
-feh --help
-feh --help
-sudo rm /usr/share/slim/themes/dark/background.png 
-sudo vi /usr/share/slim/themes/dark/slim.theme 
-feh --bg-fill media/pictures/wallpapers/bldg2.png 
-feh --bg-fill media/pictures/wallpapers/bldg2.png 
-feh --bg-fill media/pictures/wallpapers/bldg2.png 
-sudo cp media/pictures/wallpapers/bldg2.png /usr/share/slim/themes/dark/background.png
-sudo rm /usr/share/slim/themes/dark/background.jpg 
-mkdir .dots
-mkdir .dots/slim
-mkdir -p .dots/slim/etc
-mkdir -p .dots/slim/usr/share/slim/themes/dark
-mkdir -p .dots/slim/usr/share/slim/themes/fog
-sudo mv /usr/share/slim/themes/{dark,fog} .dots/slim/usr/share/slim/themes/
-sudo mv /etc/slim.conf .dots/slim/etc/
-chown -r seth:seth .dots/slim/
-chown -R seth:seth .dots/slim/
-hown -R seth:seth .dots/slim/
-sudo chown -R seth:seth .dots/slim/
-cd downloads/
-cd ..
-cd .dots/
-ls
-sudo stow slim/
-ls
-ls /usr/share/slim/themes/
-cd .dots/
-ls
-cd slim/
-ls
-ls usr/share/slim/themes/
-cd ..
-stow slim/
-ls usr/share/slim/themes/
-ls /usr/share/slim/themes/
-ls /etc/
-ls
-cd slim/
-ls
-sudo stow
-ls
-ls etc/
-sudo mv etc/slim.conf /etc/
-cd ..
-ls
-rm slim/etc/
-rm -rf slim/etc/
-ls
-ls slim/
-sudo mv -r slim/usr/share/slim/themes/* /usr/share/slim/themes/
-sudo mv slim/usr/share/slim/themes/* /usr/share/slim/themes/
-sudo vi /usr/share/slim/themes/dark/slim.theme 
-sudo vi /usr/share/slim/themes/dark/slim.theme 
-vi .dots/bar/.local/bin/bar.sh 
-cd .dots/
-stow bar
-ping seth.nvsbl.org
-sudo apt search certbot
-ls .weechat/
-tar cvjf weechat.gz .weechat/
-ls
-scp -i ~/.ssh/nvsbl.pem weechat.gz seth@aws.nvsbl.org:~/
-exit
-ssh -i ~/.ssh/nvsbl.pem seth@aws.nvsbl.org
-exit
-cd media/pictures/wallpapers/
-ls
-feh dawn.png 
-feh angle1.jpg 
-feh alley2/
-feh alley2.jpg 
-feh bldg
-feh bldg.jpg 
-feh bldg2.png 
-feh bldg2.jpg
-feh city11.jpg 
-feh futurecity1.jpg 
-feh rooftop
-feh pastelcity1.png 
-cd 
-cd downloads/
-ls
-unzstd  black_twill.zip 
-sudo pacman -S unzip
-sudo pacman -Syu
-ls
-unzip black_twill.zip 
-unzip darkness.zip 
-ls
-for i in $(ls ./*.zip) ; do unzip $i ; done
-ls
-rm *.zip
-ls
-rm -rf glider.svg index.html nickel.png style.css __MACOSX/
-ls
-ls *
-mkdir tils
-mv ./*/.png tils/
-ls
-ls *
-mv */.png tils/
-ls tils/
-ls
-for i in $(ls *.png) ; do mv $i tils/ ; done
-for i in $(ls -d *.png) ; do mv $i tils/ ; done
-man ls
-for i in $(ls -d ) ; do mv $i/*png tils/ ; done
-for i in $(ls -d $(pwd)) ; do mv $i/*png tils/ ; done
-for i in $(ls -d $(pwd)/*) ; do mv $i/*png tils/ ; done
-ls tils/
-mv tils/ tiles
-mv tiles/ ~/media/pictures/wallpapers/
-cd 
-cd media/pictures/wallpapers/tiles/
-ls
-feh --bg-tile black_twill.png 
-feh --bg-tile darkness.png 
-feh --bg-tile dirty_old_shirt
-feh --bg-tile dirty_old_shirt.png 
-feh --bg-tile dirty_old_shirt_@2X.png 
-feh --bg-tile ep_naturalblack.png 
-feh --bg-tile hexabump.png 
-feh --bg-tile oriental-tiles.png 
-feh --bg-tile tex2res4.png 
-feh --bg-tile tweed.png 
-feh --bg-tile dirty_old_shirt.png 
-feh --bg-tile dirty_old_shirt_@2X.png 
-exit
-exit
-eixt
-exit
-man cwm
-man cwmrc
-man cwmrc
-vi .cwmrc 
-vi .cwmrc 
-vi .ssh/known_hosts 
-ssh aws.nvsbl.org 
-whoami
-ping google.com
-cd .dots/
-git add ./*
-git commit -m "updates
-"
-git commit -m "updates"
-git push
-git push
-git push
-git push
-ls
-cd 
-ls
-cd dev/
-ls
-git clone https://github.com/guinanseyebrows/slim-themes.git
-ls
-rm slim-minimal/
-rm -rf slim-themes/
-sudo cp /usr/share/slim/themes/{fog,dark} slim-minimal/
-sudo cp /usr/share/slim/themes/{fog,dark} ./
-sudo cp -r /usr/share/slim/themes/{fog,dark} ./
-ls
-rm -rf slim-minimal/
-git clone https://github.com/guinanseyebrows/slim-themes.git
 ls
 mv dark/ fog/ slim-themes/
 sudo mv dark/ fog/ slim-themes/
@@ -497,4 +318,183 @@ xbl=$(xbacklight)
 echo $xbl 
 (($(xbacklight) + 1)/10))
 (( $(xbacklight) + 1)/10 ))
+exit
+rm -rf dev/slock/
+cd dev
+git clone https://github.com/Duncaen/slock.git
+cd sl
+cd slock/
+git apply slock-1.2-background-image.patch
+git am slock-1.2-background-image.patch
+ls
+vi README 
+make
+./slock 
+sudo ./slock 
+sudo make uninstall 
+sudo pacman -S slock
+cd
+sudo vi /etc/systemd/sleep.conf 
+sudo vi /etc/systemd/logind.conf 
+sudo su
+sudo pacman -Syu
+sudo pacman -Syu scrot
+sudo pacman -R slock 
+sudo pacman -S traceroute
+traceroute nvsbl.org
+pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
+sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
+${$(xbacklight):0:2}
+"${$(xbacklight):0:2}"
+echo $x
+xbl=$(xbacklight )
+echo $xbl 
+echo ${xbl:0:2}
+"${(xbacklight):0:2}"
+"${(`xbacklight`):0:2}"
+echo $xbl 
+echo ${xbl:0:2}
+read -p "enter your pet type" PET
+if [ $PET = dog] ; then echo "You have a dog"; fi
+if [ $PET = dog ] ; then echo "You have a dog"; fi
+read -p "enter your pet type" PET
+if [ $PET = dog ] ; then echo "You have a dog"; fi
+read -p "enter your pet type" PET
+if [ $PET = dog ] ; then echo "You have a dog"; fi
+read -p "enter your pet type" PET
+if [ $PET = dog ] ; then echo "You have a dog"; fi
+BACKLIGHT=$(xbacklight)
+    BACKLIGHT_ROUND=floor( ${BACKLIGHT:0:2} / 10) * 10;
+BACKLIGHT_ROUND=(${BACKLIGHT:0:2} )
+echo $BACKLIGHT
+echo $BACKLIGHT_ROUND 
+BACKLIGHT_ROUND=((${BACKLIGHT:0:2} / 10 )
+BACKLIGHT_ROUND=((${BACKLIGHT:0:2} / 10 ))
+BACKLIGHT_ROUND=(${BACKLIGHT:0:2} / 10 )
+echo $BACKLIGHT_ROUND 
+BACKLIGHT_ROUND=(${BACKLIGHT:0:2} / 10 )
+echo $BACKLIGHT_ROUND 
+BACKLIGHT=${BACKLIGHT:0:2}
+echo $BACKLIGHT
+(( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 )) 
+echo $BACKLIGHT
+vi .dots/bar/.local/bin/bar.sh 
+killall bar.sh
+vi .dots/bar/.local/bin/bar.sh 
+bar.sh 
+vi .dots/bar/.local/bin/bar.sh 
+bar.sh 
+bar.sh 
+vi .dots/bar/.local/bin/bar.sh 
+bar.sh 
+vi .dots/bar/.local/bin/bar.sh 
+bar.sh 
+vi .dots/bar/.local/bin/bar.sh 
+cd .dots/
+git commit -a -m "bar updates"
+git push
+cd
+cd dev/
+mkdir gophttp
+mv gopher-www gophttp/
+cd gophttp/
+cd gophttp/
+vi gopher-www 
+vi mdparse.php
+bc
+ping nvsbl.org
+dig
+ping nvsbl.org
+sudo pacman -Syu
+ls
+git clone https://svffer.bandcamp.com/track/draperies
+git clone https://aur.archlinux.org/yay.git
+ls
+cd yay/
+makepkg -si
+yay -S spotify-tui
+yay -S spotify-tui
+vi .local/bin/launch 
+vi .local/bin/launch 
+cd downloads/
+ls
+mplayer song7.mp3 
+mplayer song7.mp3 
+mplayer song7.mp3 
+mplayer song7.mp3 
+mplayer song7.mp3 
+mplayer song7.mp3 
+mplayer song7.mp3 
+mplayer song7.mp3 
+spotify 
+spt
+spt
+spt
+cd dev/
+ls
+vi gopher-www
+sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -Syu
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+xbacklight 
+cd 
+vi .dots/bar/.local/bin/bar.sh 
+killall bar.sh
+ls
+scp -i .ssh/nvsbl.pem 2020-04-14-113927_1920x1080_scrot.png seth@nvsbl.org:~/www/img/scrots/414-1.png
+feh 2020-04-14-113927_1920x1080_scrot.png 
+cat .config/kitty/kitty.confls
+feh 2020-04-14-114158_1920x1080_scrot.png 
+scp -i .ssh/nvsbl.pem 2020-04-14-114158_1920x1080_scrot.png  seth@nvsbl.org:~/www/img/scrots/414-1.png
+nmcli con show 
+ls
+rm *scrot*
+ls
+feh 12642404.jpg 
+rm 12642404.jpg 
+feh bg.png 
+rm bg.png 
+ls
+cd do
+cd dev/
+ls
+vi gopher-www 
+exit
+sudo pacman -S spotifyd
+sudo pacman -Ss spotify
+ps aux | grep spot
+ps aux | grep spt
+nvsbl
+nvsbl
+nvsbl
+nvsbl
+ssh -i ~/.ssh/nvsbl.pem seth@nvsbl.org
+nvsbl
+sudo reboot
+sudo pacman -R google-chrome gpick gtk-theme-elementary mupdf-gl spotify-tui xorg-xev
+pacman -Qtdq
+pacman -Qttdq
+pacman -Rns $(pacman -Qtdq)
+sudo pacman -Rns $(pacman -Qtdq)
+exit
+neofetch 
+neofetch --no-ascii
+man neofetch 
 exit

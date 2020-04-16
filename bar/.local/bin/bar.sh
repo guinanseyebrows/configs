@@ -103,6 +103,6 @@ backlightstat() {
 }
 
 while true; do
-        echo "      $(title)  %{r} $(spotifystat)    $(printessid)     $(backlightstat)     $(volume)    $(battery)      $(clock)      "
+        echo "      $(title)  %{r} $(spotifystat)    $(printessid)      $(backlightstat)     $(volume)    $(battery)      $(clock)      "
 	sleep .25
 done | lemonbar -d -g "${BARWIDTH}"x"${BARHEIGHT}" -B "${BGCOLOR}" -F "${FGCOLOR}" -U "${ULCOLOR}" -f "$MAINFONT" -f "$BOLDFONT" -f "FontAwesome:pixelsize=15" | sh > /dev/null 2>&1
