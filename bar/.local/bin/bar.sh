@@ -97,7 +97,11 @@ spotifystat() {
 }
 
 backlightstat() {
-    BACKLIGHT=$(xbacklight) ; BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
+    BACKLIGHT=$(xbacklight) 
+    if [ $BACKLIGHT > 99 ] ; then
+            BACKLIGHT=100
+    else BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
+    fi
 
     echo -e "\uf0eb  ${BACKLIGHT}%"
 }

@@ -4,6 +4,9 @@
 # hotkeys
 sxhkd &
 
+# libinput-gestures
+libinput-gestures-setup start & 
+
 # compositor
 picom &
 

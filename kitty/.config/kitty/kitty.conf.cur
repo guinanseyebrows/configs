@@ -6,35 +6,46 @@ remember_window_size    no
 initial_window_width    720
 initial_window_height   480
 
-foreground 		        #e1e1e1
-background		        #222222
-cursor			        #e1e1e1
-cursor_text_color	    #222222
-selection_foreground	#222222
-selection_background	#e1e1e1
-background_opacity	    .86
+foreground 		        #222222
+background		        #e2e2e2
+cursor			        #222222
+cursor_text_color	    #e2e2e2
+selection_foreground	#e2e2e2
+selection_background	#222222
+background_opacity	    .90
+
 
 # black
-color0			        #212121
-color8			        #212121
+color0       #515151
+color8       #707172
+
 # red
-color1      			#4a708b
-color9		        	#4a708b
+color1       #bf6382
+color9       #eaaec2
+
 # green
-color2		        	#5f9ea0
-color10		        	#5f9ea0
+color2       #65a446
+color10      #aed49b
+
 # yellow
-color3  			    #6ca6cd
-color11 			    #6ca6cd
+# color3       #ad8a43
+# color11      #d4c3a0
+color3       #ffcc00
+color11      #ffe600
+ 
 # blue
-color4	    	    	#fafaaa
-color12		        	#ffffaa
+color4       #6b85c2
+color12      #afc4e9
+
 # magenta
-color5	        		#cd9b9b
-color13 		    	#cd9b9b
+color5       #9e6bb8
+color13      #d2b1e2
+
 # cyan
-color6	    	    	#9fb6cd
-color14		        	#9fb6cd
- white
-color7		        	#d8bfd8
-color15		        	#d8bfd8
+color6       #5c9d88
+color14      #a4d0c1
+
+# white
+color7       #919191
+color15      #d0d0d0
+
