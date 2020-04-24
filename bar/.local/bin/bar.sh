@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MAINFONT="Noto Serif:style=Italic:pixelsize=13"
-BOLDFONT="Noto Serif:style=Bold Italic:pixelsize=13"
+MAINFONT="IBM Plex Serif:style=Text Italic:pixelsize=13"
+BOLDFONT="IBM Plex Serif:style=SemiBold Italic:pixelsize=13"
 BARWIDTH=1920
 BARHEIGHT=25
 FGCOLOR="#222222"
