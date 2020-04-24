@@ -5,8 +5,8 @@ BOLDFONT="Noto Sans:style=Bold Italic:pixelsize=13"
 BARWIDTH=1920
 BARHEIGHT=25
 FGCOLOR="#222222"
-BGCOLOR="#00e2e2e2"
-#BGCOLOR="#e2e2e2"
+#BGCOLOR="#00e2e2e2"
+BGCOLOR="#e2e2e2"
 ULCOLOR="#222222"
 DISCOLOR="#777777"
 
@@ -39,13 +39,13 @@ title() {
 battery() {
 	BATC=`cat /sys/class/power_supply/BAT0/capacity`
 	CHRG=`cat /sys/class/power_supply/BAT0/status`
-	if [[ $BATC -ge 85 ]]; then
+    if (( $BATC >= 85 )); then
 	    BICO="\uf240"
-	elif [[ $BATC -ge 60 && $BATC -le 84 ]]; then
+    elif (( $BATC >= 60 && $BATC <= 84 )); then
 	    BICO="\uf241"
-	elif [[ $BATC -ge 40 && $BATC -le 59 ]]; then
+    elif (( $BATC >= 40 && $BATC <=59 )); then
 	    BICO="\uf242"
-	elif [[ $BATC -ge 15 && $BATC -le 39 ]]; then
+    elif (( $BATC >= 15 && $BATC <= 39 )); then
     	BICO="%{F#f4e241}\uf243%{F-}"
 	else
 	    BICO="%{F#f45c42}\uf244%{F-}"
@@ -63,14 +63,15 @@ battery() {
 volume() {
 	VOL=`amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq`
     (( VOL = (VOL/10), VOL *= 10 ))
-	if [[ $VOL -ge 60 ]]; then
+    if (( $VOL >= 60 )); then
 		VOLICON="\uf028"
-	elif [[ $VOL -ge 30 && $VOL -lt 70 ]]; then
+    elif (( $VOL >= 30 && $VOL <= 59 )); then
 		VOLICON="\uf027"
 	else
 		VOLICON="\uf026"
 	fi
-	if [[ -n `amixer get Master | grep off` ]]; then
+
+    if [[ -n `amixer get Master | grep off` ]]; then
 		echo -e "%{F${DISCOLOR}} $VOLICON ${VOL}% %{F#222222}"
 	else
 		echo -e "%{F#222222} $VOLICON $VOL% "
@@ -97,10 +98,11 @@ spotifystat() {
 }
 
 backlightstat() {
-    BACKLIGHT=$(xbacklight) 
-    if [ $BACKLIGHT > 99 ] ; then
-            BACKLIGHT=100
-    else BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
+    BACKLIGHT=$(xbacklight | cut -f1 -d '.') 
+    if (( $BACKLIGHT > 99 )); then
+        BACKLIGHT=100
+    else
+        BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
     fi
 
     echo -e "\uf0eb  ${BACKLIGHT}%"
