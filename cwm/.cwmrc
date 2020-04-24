@@ -2,12 +2,12 @@
 ignore                  lemonbar	
 gap			            25 0 0 0
 borderwidth 		    1 
-color inactiveborder 	"#c2c2c2"
-color activeborder  	"#f3f3f3"
-color font 	    	    "#e1e1e1"
-color menubg 		    "#222222"
-color menufg 		    "#e1e1e1"
-fontname    		    "Noto Sans:pixelsize=13:style=Italic"
+color inactiveborder 	"#e2e2e2"
+color activeborder  	"#efefef"
+color font 	    	    "#222222"
+color menubg 		    "#efefef"
+color menufg 		    "#E6E6FA"
+fontname    		    "Noto Serif:pixelsize=13:style=Italic"
 
 # system
 unbind-key all

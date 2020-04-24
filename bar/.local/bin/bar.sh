@@ -1,12 +1,12 @@
 #!/bin/bash
 
-MAINFONT="Noto Sans:style=Italic:pixelsize=13"
-BOLDFONT="Noto Sans:style=Bold Italic:pixelsize=13"
+MAINFONT="Noto Serif:style=Italic:pixelsize=13"
+BOLDFONT="Noto Serif:style=Bold Italic:pixelsize=13"
 BARWIDTH=1920
 BARHEIGHT=25
 FGCOLOR="#222222"
 #BGCOLOR="#00e2e2e2"
-BGCOLOR="#e2e2e2"
+BGCOLOR="#efefef"
 ULCOLOR="#222222"
 DISCOLOR="#777777"
 
@@ -81,7 +81,7 @@ volume() {
 printessid() {
 	 ESSID=`iwgetid -r`
 	 if [ $ESSID ]; then
-		echo -e "\uf1eb  $ESSID"
+		echo -e "\uf1eb $ESSID"
 	 fi
 }
 
@@ -105,10 +105,10 @@ backlightstat() {
         BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
     fi
 
-    echo -e "\uf0eb  ${BACKLIGHT}%"
+    echo -e "\uf0eb ${BACKLIGHT}%"
 }
 
 while true; do
-        echo "      $(title)  %{r} $(spotifystat)    $(printessid)      $(backlightstat)     $(volume)    $(battery)      $(clock)      "
+        echo "    $(title)  %{r} $(spotifystat)     $(printessid)     $(backlightstat)    $(volume)    $(battery)    $(clock)   "
 	sleep .25
 done | lemonbar -d -g "${BARWIDTH}"x"${BARHEIGHT}" -B "${BGCOLOR}" -F "${FGCOLOR}" -U "${ULCOLOR}" -f "$MAINFONT" -f "$BOLDFONT" -f "FontAwesome:pixelsize=15" | sh > /dev/null 2>&1
