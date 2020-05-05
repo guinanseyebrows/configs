@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MAINFONT="IBM Plex Serif:style=Text Italic:pixelsize=13"
-BOLDFONT="IBM Plex Serif:style=SemiBold Italic:pixelsize=13"
+MAINFONT="Source Serif Pro:style=Oblique:pixelsize=13"
+BOLDFONT="Source Serif Pro:style=Bold Oblique:pixelsize=13"
 BARWIDTH=1920
 BARHEIGHT=25
 FGCOLOR="#222222"
@@ -99,7 +99,7 @@ spotifystat() {
 
 backlightstat() {
     BACKLIGHT=$(xbacklight | cut -f1 -d '.') 
-    if (( $BACKLIGHT > 99 )); then
+    if [[ $BACKLIGHT -gt 99 ]]; then
         BACKLIGHT=100
     else
         BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))

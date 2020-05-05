@@ -14,7 +14,7 @@ unbind-key all
 bind-key 4C-r   		restart
 bind-key 4C-q 	    	quit
 bind-key 4-l 		    slock
-bind-key 4-space 	    launch
+bind-key 4-space 	    lunch
 bind-key 4-Return 	    kitty
 bind-key 4S-Return      menu-ssh
 
