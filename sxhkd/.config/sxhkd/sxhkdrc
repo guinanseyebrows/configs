@@ -1,13 +1,22 @@
 XF86AudioMute
-	amixer -q sset Master toggle 
+	amixer -c 1 -q sset PCM toggle 
 
 XF86AudioLowerVolume
-	amixer -q sset Master 5%-
+	amixer -c 1 -q sset PCM 5%-
 
 XF86AudioRaiseVolume
-	amixer -q sset Master 5%+
+	amixer -c 1 -q sset PCM 5%+
 
 XF86AudioMicMute
+
+XF86AudioPlay
+    pyspctl playpause
+
+XF86AudioNext
+    pyspctl next
+
+XF86AudioPrev
+    pyspctl previous
 
 XF86MonBrightnessDown
 	xbacklight -dec 10

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/seth/dev/infra/xymon-scripts'
 let g:netrw_dirhist_3='/home/seth/dev/pyspctl'
 let g:netrw_dirhist_2='/home/seth/.config/kitty'
 let g:netrw_dirhist_1='/home/seth/.local/bin'

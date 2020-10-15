@@ -1,37 +1,37 @@
 # style
 ignore                  lemonbar	
-gap			            25 0 0 0
-borderwidth 		    1 
-color inactiveborder 	"#c2c2c2"
-color activeborder  	"#f3f3f3"
-color font 	    	    "#e1e1e1"
+gap			            22 0 0 0
+borderwidth 		    2
+color inactiveborder 	"#9f9f9f"
+color activeborder  	"#ffbf00"
+color font 	    	    "#ffbf00"
 color menubg 		    "#222222"
-color menufg 		    "#e1e1e1"
-fontname    		    "Noto Sans:pixelsize=13:style=Italic"
+color menufg 		    "#e0e0e0"
+fontname    		    "Roboto:style=Medium:pixelsize=11"
 
 # system
 unbind-key all
 bind-key 4C-r   		restart
 bind-key 4C-q 	    	quit
 bind-key 4-l 		    slock
-bind-key 4-space 	    launch
-bind-key 4-Return 	    kitty
+#bind-key 4-space 	    /home/seth/.local/bin/launch
+bind-key 4-space 	    menu-exec
+bind-key 4-Return 	    xterm 
 bind-key 4S-Return      menu-ssh
 
 # window controls
 bind-key 4-equal	    window-maximize
 bind-key 4-v            window-vmaximize
+bind-key 4-t            window-vtile
 bind-key 4-minus 	    window-hide	
 bind-key 4-BackSpace	window-delete
 bind-key 4-Tab	    	window-cycle
 bind-key 4S-Tab	    	window-rcycle
-bind-key 4-t	    	window-vtile
 
 # mouse controls
 
 bind-mouse 4-1 	    	window-move
 bind-mouse 4-3 		    window-resize
-
 
 # groups
 sticky yes

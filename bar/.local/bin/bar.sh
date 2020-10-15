@@ -1,39 +1,46 @@
 #!/bin/bash
 
-MAINFONT="Noto Sans:style=Italic:pixelsize=13"
-BOLDFONT="Noto Sans:style=Bold Italic:pixelsize=13"
+MAINFONT="Roboto:style=Medium:pixelsize=10"
+BOLDFONT="Roboto:style=Bold:pixelsize=10"
+ICONFONT="forkawesome:pixelsize=13"
 BARWIDTH=1920
-BARHEIGHT=25
-FGCOLOR="#222222"
-#BGCOLOR="#00e2e2e2"
-BGCOLOR="#e2e2e2"
-ULCOLOR="#222222"
+BARHEIGHT=22
+FGCOLOR="#e2e2e2"
+BGCOLOR="#f0090909"
+#BGCOLOR="#e2e2e2"
+ULCOLOR="#e2e2e2"
 DISCOLOR="#777777"
 
 clock() {
-	TIME=`date +%l:%M`
-	echo -e "\uf017 $TIME"
+	TIME=`date "+%a %e %b %l:%M"`
+	echo -e "%{F#ffbf00}\uf017%{F-} $TIME"
 }
 
 title() {
 	WINT=`xtitle`
     case "$WINT" in
+            rdesktop*)
+                 WINICON="\uf108"
+                 ;;
+            "*Google Chrome")
+                 WINICON="\uf268"
+                 ;;
+            Slack*)
+                 WINICON="\uf198"
+                 ;;
             *Firefox)
                  WINICON="\uf269"
                  ;;
-            *@*:*)
+            *@*:*|xterm)
                  WINICON="\uf120"
-                 ;;
-            Spotify | "Spotify Premium")
-                 WINICON="\uf1bc"
                  ;;
             *)
                  WINICON="\uf1e2"
                  ;;
     esac
 
-    #WINICON="\uf1e2"
-	echo -e "$WINICON  %{T1}$WINT%{T1}"
+#    WINICON="\uf1e2"
+	echo -e "%{F#ffbf00}$WINICON %{F-} %{T1}$WINT%{T1}"
 }
 
 battery() {
@@ -61,7 +68,7 @@ battery() {
 }
  
 volume() {
-	VOL=`amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq`
+	VOL=`amixer -c 1 get PCM| sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p'| uniq`
     (( VOL = (VOL/10), VOL *= 10 ))
     if (( $VOL >= 60 )); then
 		VOLICON="\uf028"
@@ -71,19 +78,13 @@ volume() {
 		VOLICON="\uf026"
 	fi
 
-    if [[ -n `amixer get Master | grep off` ]]; then
-		echo -e "%{F${DISCOLOR}} $VOLICON ${VOL}% %{F#222222}"
+    if [[ -n `amixer -c 1 get PCM| grep off` ]]; then
+		echo -e "%{F${DISCOLOR}} $VOLICON ${VOL}% %{F-}"
 	else
-		echo -e "%{F#222222} $VOLICON $VOL% "
+		echo -e "%{F#ffbf00} $VOLICON %{F-}$VOL% "
 	fi
 }
  
-printessid() {
-	 ESSID=`iwgetid -r`
-	 if [ $ESSID ]; then
-		echo -e "\uf1eb  $ESSID"
-	 fi
-}
 
 spotifystat() {
     SPOTSTAT=$(ps aux | grep spotify | grep -v 'grep spotify')
@@ -97,18 +98,8 @@ spotifystat() {
     fi
 }
 
-backlightstat() {
-    BACKLIGHT=$(xbacklight | cut -f1 -d '.') 
-    if (( $BACKLIGHT > 99 )); then
-        BACKLIGHT=100
-    else
-        BACKLIGHT=${BACKLIGHT:0:2} ; (( BACKLIGHT = (BACKLIGHT/10), BACKLIGHT *= 10 ))
-    fi
-
-    echo -e "\uf0eb  ${BACKLIGHT}%"
-}
 
 while true; do
-        echo "      $(title)  %{r} $(spotifystat)    $(printessid)      $(backlightstat)     $(volume)    $(battery)      $(clock)      "
+        echo "      $(title)  %{r} $(spotifystat)    $(volume)    $(clock)      "
 	sleep .25
-done | lemonbar -d -g "${BARWIDTH}"x"${BARHEIGHT}" -B "${BGCOLOR}" -F "${FGCOLOR}" -U "${ULCOLOR}" -f "$MAINFONT" -f "$BOLDFONT" -f "FontAwesome:pixelsize=15" | sh > /dev/null 2>&1
+done | /home/seth/.local/bin/lemonbar -d -g "${BARWIDTH}"x"${BARHEIGHT}" -B "${BGCOLOR}" -F "${FGCOLOR}" -U "${ULCOLOR}" -f "$MAINFONT" -f "$BOLDFONT" -f "$ICONFONT" | sh > /dev/null 2>&1
